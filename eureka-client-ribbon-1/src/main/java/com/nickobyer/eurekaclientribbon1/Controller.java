@@ -5,11 +5,11 @@
  * 
  * @mail
  * 
- * @createtime 2017年9月21日 下午2:01:30
+ * @createtime 2017年9月21日 下午1:04:29
  */
-package com.nickobyer.eurekaclient_2;
+package com.nickobyer.eurekaclientribbon1;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,12 +22,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Controller {
 
-	@Autowired
-	HelloService service;
+	@Value("${server.port}")
+	String port;
 
 	@RequestMapping("/test")
 	public String test(@RequestParam String name) {
 
-		return service.hiService(name);
+		return "hello_" + name + "----" + port;
 	}
 }

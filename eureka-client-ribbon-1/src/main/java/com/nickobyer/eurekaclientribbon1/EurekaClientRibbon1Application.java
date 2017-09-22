@@ -1,4 +1,4 @@
-package com.nickobyer.eurekaclient_1;
+package com.nickobyer.eurekaclientribbon1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 @EnableEurekaClient
-public class EurekaClient1Application {
+public class EurekaClientRibbon1Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EurekaClient1Application.class, args);
+		SpringApplication.run(EurekaClientRibbon1Application.class, args);
 	}
 
 }

@@ -7,7 +7,7 @@
  * 
  * @createtime 2017年9月21日 下午2:00:02
  */
-package com.nickobyer.eurekaclient_2;
+package com.nickobyer.eurekaclientribbon2;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

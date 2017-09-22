@@ -1,4 +1,4 @@
-package com.nickobyer.eurekaclient_2;
+package com.nickobyer.eurekaclientribbon2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,10 +11,10 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableHystrix
-public class EurekaClient2Application {
+public class EurekaClientRibbon2Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EurekaClient2Application.class, args);
+		SpringApplication.run(EurekaClientRibbon2Application.class, args);
 	}
 
 	@Bean
