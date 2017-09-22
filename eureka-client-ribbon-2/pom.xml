@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.nickobyer</groupId>
-	<artifactId>eureka-client_2</artifactId>
+	<artifactId>eureka-client-ribbon-2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>eureka-client_2</name>
+	<name>eureka-client-ribbon-2</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
