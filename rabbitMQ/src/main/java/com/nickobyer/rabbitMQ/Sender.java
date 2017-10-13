@@ -30,8 +30,10 @@ public class Sender {
 	@Scheduled(fixedDelay = 3000) // 3s执行1次此方法;
 	public void run() throws Exception {
 
+		// 发布、订阅模式
 		// System.out.println("start.....................");
 		// rabbitTemplate.convertAndSend("topicExchange", "topic.messages", "hello rabbit");
+		// 广播模式
 		System.out.println("start.....................");
 		rabbitTemplate.convertAndSend("fanoutExchange", "fanout.a", "hello rabbit");
 	}
