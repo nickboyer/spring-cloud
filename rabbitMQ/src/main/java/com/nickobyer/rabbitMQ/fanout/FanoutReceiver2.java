@@ -14,6 +14,8 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Component;
 
+import com.nickobyer.rabbitMQ.entry.Person;
+
 /**
  * @title
  * @description
@@ -24,8 +26,8 @@ import org.springframework.stereotype.Component;
 public class FanoutReceiver2 {
 
 	@RabbitHandler
-	public void reveiceMsg(@Payload String msg) {
+	public void reveiceMsg(@Payload Person p) {
 
-		System.out.println("Receive<fanout.b><" + msg + ">-----------------------");
+		System.out.println("Receive<fanout.b><" + p + ">-----------------------");
 	}
 }
